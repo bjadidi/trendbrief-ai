@@ -1,4 +1,14 @@
-# NotebookLM video generator
+# trendbrief-ai
+
+Command-line tools for turning **what people are searching for right now** into short explainer videos.
+
+* `fetch_trends.py` pulls the top Google Search trends for a region (Google Trends; no API key needed).
+* `fetch_youtube_trends.py` pulls YouTube's most-popular videos for a region (YouTube Data API v3).
+* `generate_video.py` turns a URL, file or pasted text into a narrated video overview with NotebookLM and downloads the MP4.
+
+**Status: early prototype.** The pieces above work individually. The planned next stage chains them into one pipeline: source verification, a multi-agent script, automated quality checks and scheduled publishing.
+
+## Video generation (NotebookLM)
 
 Small Python CLI that uses [notebooklm-py](https://github.com/teng-lin/notebooklm-py) to create a notebook from a source, generate a Video Overview, and download the MP4.
 
